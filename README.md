@@ -1,7 +1,7 @@
 # MAN PAGE: DIOGO-PORTFOLIO
 
 ## NAME
-    diogo-goncalves - Ethical Hacker & Cybersecurity Student
+    diogo-goncalves - Computer Science & Cybersecurity Enthusiast
 
 ## SYNOPSIS
     ./visit_portfolio --url https://diogo-al.github.io
