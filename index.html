@@ -19,11 +19,13 @@
             <span class="prompt">></span> 
             <span class="typing-text"></span>
         </div>
-        <ul class="section">
-            <li>./about</li>
-            <li>./projects</li>
-            <li>./certificates</li>
-        </ul>
+        <nav>
+            <ul>
+                <li><a href="#about">./about</a></li>
+                <li><a href="#lab">./my_lab</a></li>
+                <li><a href="#certificates">./certificates</a></li>
+            </ul>
+        </nav>
     </div>
 
     <div class="terminal">
@@ -52,24 +54,26 @@
     </div>
     <p class="scroll">↓ scroll para continuar ↓</p>
 
-    <p class="command"><span class="gt">diogo@kali</span>:<span class="bt">~</span>$ cat&nbsp;<span class="gt"> about.txt</span></p>
-    <div class="info-terminal">
-        <div class="terminal-section">
-            <p><span class="ct">> [WHO_AM_I]</span></p>
-            <p>Hi! I'm <span class="yt">Diogo</span>, a 19-year-old <span class="yt">Computer Engineering</span> student at <span class="yt">ISCTE-IUL</span>.</p>
-            <p>Since I can remember, <span class="rt">Cybersecurity</span> has always sparked my curiosity, and I'm more certain than ever that this is my path. To keep learning, I've been taking courses, planning my next certifications, and building my own <span class="bt">Home Lab</span> (which you can check out below).</p>
-            
-            <br>
-            
-            <p><span class="ct">> [EXPERIENCE_LOG]</span></p>
-            <p>I've already interned at <span class="bt">ONI Telecom</span>, where I learned how to build servers and work with <span class="gt">Bash scripting</span>. This year, I'm returning to ONI for a second internship to deepen my knowledge in <span class="rt">Networking and Security</span>.</p>
-            
-            <br>
-            
-            <p><span class="ct">> [FUTURE_GOALS]</span></p>
-            <p>My current goal is to finish my Bachelor's degree and pursue a <span class="yt">Master's</span>. I'm always open to <span class="gt">internship opportunities</span> or projects where I can apply what I learn in my lab and at university.</p>
+    <section id="about">
+        <p class="command"><span class="gt">diogo@kali</span>:<span class="bt">~</span>$ cat&nbsp;<span class="gt"> about.txt</span></p>
+        <div class="info-terminal">
+            <div class="terminal-section">
+                <p><span class="ct">> [WHO_AM_I]</span></p>
+                <p>Hi! I'm <span class="yt">Diogo</span>, a 19-year-old <span class="yt">Computer Engineering</span> student at <span class="yt">ISCTE-IUL</span>.</p>
+                <p>Since I can remember, <span class="rt">Cybersecurity</span> has always sparked my curiosity, and I'm more certain than ever that this is my path. To keep learning, I've been taking courses, planning my next certifications, and building my own <span class="bt">Home Lab</span> (which you can check out below).</p>
+                
+                <br>
+                
+                <p><span class="ct">> [EXPERIENCE_LOG]</span></p>
+                <p>I've already interned at <span class="bt">ONI Telecom</span>, where I learned how to build servers and work with <span class="gt">Bash scripting</span>. This year, I'm returning to ONI for a second internship to deepen my knowledge in <span class="rt">Networking and Security</span>.</p>
+                
+                <br>
+                
+                <p><span class="ct">> [FUTURE_GOALS]</span></p>
+                <p>My current goal is to finish my Bachelor's degree and pursue a <span class="yt">Master's</span>. I'm always open to <span class="gt">internship opportunities</span> or projects where I can apply what I learn in my lab and at university.</p>
+            </div>
         </div>
-    </div>
+    </section>
 
     <p class="command"><span class="gt">diogo@kali</span>:<span class="bt">~</span>$ ls -l&nbsp<span class="gt">skills/</span></p>
     <div class="info-terminal-skills">
@@ -81,49 +85,53 @@
         </div>
     </div>
 
-    <p class="command"><span class="gt">diogo@kali</span>:<span class="bt">~</span>$ cat&nbsp<span class="gt">lab_setup.md</span></p>
-    <div class="info-terminal">
-        <div class="terminal-section">
-            <p><span class="ct">> [HARDWARE_STACK]</span></p>
-            <p>- <span class="yt">Networking:</span> Cisco Layer 3 Switch & Cisco Physical Firewall.</p>
-            <p>- <span class="yt">Computing:</span> Proxmox VE Node (Mini PC) for virtualization & Raspberry Pi.</p>
-            
-            <br>
-            
-            <p><span class="ct">> [LAB_CAPABILITIES]</span></p>
-            <p>This environment allows me to simulate enterprise networks, test <span class="rt">VLAN segmentation</span>, and configure <span class="rt">Firewall Access Control Lists (ACLs)</span> in a controlled setting.</p>
-            
-            <br>
-            
-            <p><span class="ct">> [OS_ENVIRONMENTS]</span></p>
-            <p>- <span class="bt">Pentesting:</span> Parrot OS (Dedicated Laptop) & Kali Linux VMs.</p>
-            <p>- <span class="bt">Infrastructure:</span> Self-hosted Services, Pi-hole (DNS Security), and local Web Servers.</p>
+    <section id="lab">
+        <p class="command"><span class="gt">diogo@kali</span>:<span class="bt">~</span>$ cat&nbsp<span class="gt">lab_setup.md</span></p>
+        <div class="info-terminal">
+            <div class="terminal-section">
+                <p><span class="ct">> [HARDWARE_STACK]</span></p>
+                <p>- <span class="yt">Networking:</span> Cisco Layer 3 Switch & Cisco Physical Firewall & Cisco Router.</p>
+                <p>- <span class="yt">Computing:</span> Proxmox VE Node (Mini PC) for virtualization & Raspberry Pi.</p>
+                
+                <br>
+                
+                <p><span class="ct">> [LAB_CAPABILITIES]</span></p>
+                <p>This environment allows me to simulate enterprise networks, test <span class="rt">VLAN segmentation</span>, and configure <span class="rt">Firewall Access Control Lists (ACLs)</span> in a controlled setting.</p>
+                
+                <br>
+                
+                <p><span class="ct">> [OS_ENVIRONMENTS]</span></p>
+                <p>- <span class="bt">Pentesting:</span> Parrot OS (Dedicated Laptop) & Kali Linux VMs.</p>
+                <p>- <span class="bt">Infrastructure:</span> Self-hosted Services, Pi-hole (DNS Security), and local Web Servers.</p>
+            </div>
         </div>
-    </div>
-    <p class="command"><span class="gt">diogo@kali</span>:<span class="bt">~</span>$ cat&nbsp;<span class="gt">certifications.log</span></p>
-    <div class="info-terminal-certifications">
-        <div class="terminal-section">
-            <p style="color: #555;">#--- Certification Progress ---</p>
-            <p><span class="yt">[IN PROGRESS]</span> Cisco Ethical Hacking <span style="color: #555;"># Fundamentals of offensive security & network defense</span></p>
-            <div class="line"></div>
+    </section>
 
-            <p><span class="yt">[IN PROGRESS]</span> PortSwigger Academy <span style="color: #555;"># Web Application Security & Burp Suite mastery</span></p>
-            <div class="line"></div>
+    <section id="certificates">
+        <p class="command"><span class="gt">diogo@kali</span>:<span class="bt">~</span>$ cat&nbsp;<span class="gt">certifications.log</span></p>
+        <div class="info-terminal-certifications">
+            <div class="terminal-section">
+                <p style="color: #555;">#--- Certification Progress ---</p>
+                <p><span class="yt">[IN PROGRESS]</span> Cisco Ethical Hacking <span style="color: #555;"># Fundamentals of offensive security & network defense</span></p>
+                <div class="line"></div>
 
-            <p><span class="rt">[TARGET]</span> eJPT <span style="color: #555;"># Junior Penetration Tester - First real hands-on certification</span></p>
-            <div class="line"></div>
-            <p><span class="rt">[TARGET]</span> CompTIA Security+ <span style="color: #555;"># Global standard for foundational cybersecurity knowledge</span></p>
-            <div class="line"></div>
-            
-            <p><span class="rt">[TARGET]</span> CCNA <span style="color: #555;"># Deep dive into Cisco networking - Essential for any hacker</span></p>
-            <div class="line"></div>
-            
-            <p><span class="rt">[TARGET]</span> OSCP <span style="color: #555;"># The "Gold Standard" - 24-hour intense penetration testing exam</span></p>
-            <div class="line"></div>
-            <p> <span class="gt">[INFO] </span>Total: 6 certifications tracked</p>
+                <p><span class="yt">[IN PROGRESS]</span> PortSwigger Academy <span style="color: #555;"># Web Application Security & Burp Suite mastery</span></p>
+                <div class="line"></div>
+
+                <p><span class="rt">[TARGET]</span> eJPT <span style="color: #555;"># Junior Penetration Tester - First real hands-on certification</span></p>
+                <div class="line"></div>
+                <p><span class="rt">[TARGET]</span> CompTIA Security+ <span style="color: #555;"># Global standard for foundational cybersecurity knowledge</span></p>
+                <div class="line"></div>
+                
+                <p><span class="rt">[TARGET]</span> CCNA <span style="color: #555;"># Deep dive into Cisco networking - Essential for any hacker</span></p>
+                <div class="line"></div>
+                
+                <p><span class="rt">[TARGET]</span> OSCP <span style="color: #555;"># The "Gold Standard" - 24-hour intense penetration testing exam</span></p>
+                <div class="line"></div>
+                <p> <span class="gt">[INFO] </span>Total: 6 certifications tracked</p>
+            </div>
         </div>
-    </div>
-
+    </section>
     <footer>
         <p><span class="gt">></span> System Status: <span class="yt">Deploying to Raspberry Pi 4 Home Lab</span></p>
         <div class="line-footer"></div>
